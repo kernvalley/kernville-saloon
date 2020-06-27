@@ -5,7 +5,7 @@ display: standalone
 description: "Website/app for the Kernville Saloon"
 icons-file: /img/icons.svg
 theme:
-  color: '#528ff9'
+  color: '#661e2a'
   background: '#242424'
 icons:
 - src: /img/favicon.svg
