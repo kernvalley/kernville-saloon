@@ -1,8 +1,8 @@
-name: Jekyll Template
-shortName: Jekyll Template
-version: 1.0.1
+name: Kernville Saloon
+shortName: Kernville Saloon
+version: 1.0.0
 display: standalone
-description: "A GitHub repository for easily creating fast, modern, PWA compatible websites"
+description: "Website/app for the Kernville Saloon"
 icons-file: /img/icons.svg
 theme:
   color: '#528ff9'
