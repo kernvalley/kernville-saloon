@@ -28,9 +28,15 @@ icons:
   type: image/png
   sizes: 16x16
 screenshots:
-- src: 'https://i.imgur.com/uRKaQQQl.png'
-  sizes: 640x354
-  type: image/png
+- src: 'https://i.imgur.com/cQQokkTl.jpg'
+  sizes: 640x312
+  type: image/jpeg
 related_applications: []
-features: []
-categories: []
+features:
+- Available offline
+- View upcoming events
+- Watch highlights of bands playing
+- Quick list to drivers for hire
+categories:
+- lifestyle
+- bar
