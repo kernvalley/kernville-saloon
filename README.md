@@ -1,5 +1,5 @@
 # kernville-saloon
-A template repository for Jekyll sites, including skeleton JS, CSS, SVGs, fonts, etc.
+Established in 2010, the Kernville Saloon is a highlight of this little Valley.
 
 [![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=kernvalley/kernville-saloon)](https://dependabot.com)
 [![Node CI](https://github.com/kernvalley/kernville-saloon/workflows/Node%20CI/badge.svg)](https://github.com/kernvalley/static-template/actions)

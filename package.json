@@ -2,7 +2,7 @@
   "name": "kernville-saloon",
   "version": "1.0.0",
   "private": true,
-  "description": "Website for the Kernville Saloon",
+  "description": "Established in 2010, the Kernville Saloon is a highlight of this little Valley.",
   "config": {
     "icons": "./_data/icons.csv",
     "serve": {

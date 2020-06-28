@@ -2,7 +2,7 @@ name: Kernville Saloon
 shortName: Kernville Saloon
 version: 1.0.0-b2
 display: standalone
-description: "Website/app for the Kernville Saloon"
+description: "Established in 2010, the Kernville Saloon is a highlight of this little Valley."
 icons-file: /img/icons.svg
 theme:
   color: '#661e2a'

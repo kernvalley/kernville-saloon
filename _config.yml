@@ -16,7 +16,7 @@ manifest: /manifest.json
 tiles-config: /browserconfig.xml
 service_worker: "./service-worker.js"
 og-type: website
-description: "Website for the Kernville Saloon"
+description: "Established in 2010, the Kernville Saloon is a highlight of this little Valley."
 mobile-web-app-capable: true
 # canonical: ''
 keywords:
