@@ -8,7 +8,7 @@ const config = {
 	fresh: [
 		/* Root document */
 		'{{ site.pages | where: "pinned", true | map: "url" | join: "', '" }}',
-		'{{ site.posts | where: "pinned", true | map: "url" | join: "', '" }}',
+		// '{{ site.posts | where: "pinned", true | map: "url" | join: "', '" }}',
 		'https://baconipsum.com/api/?paras=5&format=json&type=all-meat',
 	].map(path => new URL(path, location.origin).href),
 	stale: [
@@ -25,7 +25,7 @@ const config = {
 
 		/* JS, `customElements`, etc. */
 		'https://polyfill.io/v3/polyfill.min.js',
-		'https://cdn.kernvalley.us/components/pwa-install.js',
+		'https://cdn.kernvalley.us/components/pwa/install.js',
 
 		/* CSS */
 		'https://unpkg.com/leaflet@1.6.0/dist/leaflet.css',
@@ -36,7 +36,6 @@ const config = {
 		'/img/icon-192.png',
 		'/img/icon-32.png',
 		'/img/favicon.svg',
-		'/img/neon.svg',
 		'https://cdn.kernvalley.us/img/adwaita-icons/actions/mail-send.svg',
 		'https://cdn.kernvalley.us/img/adwaita-icons/actions/mark-location.svg',
 		'https://cdn.kernvalley.us/img/octicons/file-media.svg',

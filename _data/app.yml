@@ -1,6 +1,6 @@
 name: Kernville Saloon
 shortName: Kernville Saloon
-version: 1.0.0
+version: 1.0.0-b1
 display: standalone
 description: "Website/app for the Kernville Saloon"
 icons-file: /img/icons.svg
