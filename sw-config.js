@@ -9,6 +9,7 @@ const config = {
 		/* Root document */
 		'{{ site.pages | where: "pinned", true | map: "url" | join: "', '" }}',
 		'{{ site.posts | where: "pinned", true | map: "url" | join: "', '" }}',
+		'https://baconipsum.com/api/?paras=5&format=json&type=all-meat',
 	].map(path => new URL(path, location.origin).href),
 	stale: [
 		/* Other HTML */
