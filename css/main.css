@@ -8,16 +8,19 @@ main {
 }
 
 @media (min-width: 800px) {
-	#main > section.clearfix img.float-left {
-		max-height: 350px;
-		margin-right: 12px;
+	.desktop-float {
+		display: inline-block;
 		margin-bottom: 8px;
 	}
 
-	#main > section.clearfix img.float-right {
-		max-height: 350px;
+	#main > section.clearfix .desktop-float-left {
+		float: left;
+		margin-right: 12px;
+	}
+
+	#main > section.clearfix .desktop-float-right {
+		float: right;
 		margin-left: 12px;
-		margin-bottom: 8px;
 	}
 }
 
