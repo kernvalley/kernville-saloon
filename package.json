@@ -1,8 +1,8 @@
 {
-  "name": "jekyll-template",
+  "name": "kernville-saloon",
   "version": "1.0.0",
   "private": true,
-  "description": "A template repository for Jekyll sites, including skeleton JS, CSS, SVGs, fonts, etc.",
+  "description": "Established in 2010, the Kernville Saloon is a highlight of this little Valley.",
   "config": {
     "icons": "./_data/icons.csv",
     "serve": {
@@ -19,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/shgysk8zer0/jekyll-template.git"
+    "url": "git+https://github.com/kernvalley/kernville-saloon.git"
   },
   "keywords": [
     "jekyll",
@@ -33,9 +33,9 @@
   "author": "Chris Zuber <shgysk8zer0@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/shgysk8zer0/jekyll-template/issues"
+    "url": "https://github.com/kernvalley/kernville-saloon/issues"
   },
-  "homepage": "https://github.com/shgysk8zer0/jekyll-template",
+  "homepage": "https://github.com/kernvalley/kernville-saloon",
   "scripts": {
     "test": "npm run lint",
     "start": "npm run netlify",

@@ -1,1 +1,12 @@
-<header id="header" class="background-cover background-fixed"></header>
+<header id="header" class="background-cover background-fixed flex column">
+	<h1 class="center color-alt font-title site-branding">
+		<div>{{ site.title }}</div>
+		{% include icon.html icon="beer" %}
+		<div>
+			<a href="tel:+17603762500" title="Call the Kernville Saloon">
+				{% include icon.html icon="call-start" %}
+				<span>760 376-2500</span>
+			</a>
+		</div>
+	</h1>
+</header>

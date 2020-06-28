@@ -1,5 +1,5 @@
 author: Chris Zuber
-title: Jekyll Template Demo
+title: Kernville Saloon
 # url: ''
 markdown: kramdown
 version: 1.0.0
@@ -14,9 +14,9 @@ robots: 'follow, index'
 referrer: origin-when-cross-origin
 manifest: /manifest.json
 tiles-config: /browserconfig.xml
-# service_worker: "./service-worker.js"
+service_worker: "./service-worker.js"
 og-type: website
-description: "A template repository for Jekyll sites, including skeleton JS, CSS, SVGs, fonts, etc."
+description: "Established in 2010, the Kernville Saloon is a highlight of this little Valley."
 mobile-web-app-capable: true
 # canonical: ''
 keywords:
@@ -33,9 +33,9 @@ keywords:
 - javascript
 - es6
 repository:
-  username: shgysk8zer0
-  project: jekyll-template
-  title: Jekyll Template
+  username: kernvalley
+  project: kernville-saloon
+  title: kernville-saloon
 # twitter:
 feed:
   url: /feed.rss

@@ -3,6 +3,27 @@ main {
 	--link-decoration: underline;
 }
 
+#main > section.clearfix:not(:last-of-type) {
+	margin-bottom: 18px;
+}
+
+@media (min-width: 800px) {
+	.desktop-float {
+		display: inline-block;
+		margin-bottom: 8px;
+	}
+
+	#main > section.clearfix .desktop-float-left {
+		float: left;
+		margin-right: 12px;
+	}
+
+	#main > section.clearfix .desktop-float-right {
+		float: right;
+		margin-left: 12px;
+	}
+}
+
 .breach.card {
 	background: #c8c8c8;
 }
