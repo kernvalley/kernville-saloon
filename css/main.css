@@ -3,6 +3,10 @@ main {
 	--link-decoration: underline;
 }
 
+#share-container share-to-button {
+	margin: 4px;
+}
+
 #main > section.clearfix:not(:last-of-type) {
 	margin-bottom: 18px;
 }
