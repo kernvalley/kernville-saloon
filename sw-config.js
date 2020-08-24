@@ -21,7 +21,6 @@ const config = {
 		'https://cdn.kernvalley.us/components/share-to-button/share-to-button.html',
 		'https://cdn.kernvalley.us/components/slide-show/slide-show.html',
 		'https://cdn.kernvalley.us/components/github/user.html',
-		'https://cdn.kernvalley.us/components/spotify/player.html',
 
 		/* JS, `customElements`, etc. */
 		'https://polyfill.io/v3/polyfill.min.js',

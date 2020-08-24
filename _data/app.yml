@@ -1,6 +1,6 @@
 name: Kernville Saloon
 shortName: Kernville Saloon
-version: 1.0.0-b3
+version: 1.0.0-b4
 display: standalone
 description: "Established in 2010, the Kernville Saloon is a highlight of this little Valley."
 icons-file: /img/icons.svg
@@ -10,7 +10,8 @@ theme:
 icons:
 - src: /img/favicon.svg
   type: image/svg+xml
-  sizes: any
+  sizes: 192x192
+  prurpose: any maskable
 - src: /img/apple-touch-icon.png
   rel: apple-touch-icon
   type: image/png
@@ -18,9 +19,11 @@ icons:
 - src: /img/icon-512.png
   type: image/png
   sizes: 512x512
+  prurpose: any maskable
 - src: /img/icon-192.png
   type: image/png
   sizes: 192x192
+  prurpose: any maskable
 - src: /img/icon-32.png
   type: image/png
   sizes: 32x32

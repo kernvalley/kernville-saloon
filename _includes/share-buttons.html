@@ -28,6 +28,20 @@
 			</span>
 		</share-to-button>
 	{% endif %}
+	{% if include.gmail %}
+		<share-to-button target="gmail" class="custom-element share-target if-defined" text="{{ include.text }}" url="{{ include.url | default: page.url }}" title="Copy to Clipboard">
+			<span slot="text">
+				<span>{{ include.gmail_text | default: 'Gmail' }}</span>
+			</span>
+		</share-to-button>
+	{% endif %}
+	{% if include.email %}
+		<share-to-button target="email" class="custom-element share-target if-defined" text="{{ include.text }}" url="{{ include.url | default: page.url }}" title="Copy to Clipboard">
+			<span slot="text">
+				<span>{{ include.email_text | default: 'Email' }}</span>
+			</span>
+		</share-to-button>
+	{% endif %}
 	{% if include.clipboard %}
 		<share-to-button target="clipboard" class="custom-element share-target if-defined" text="{{ include.text }}" url="{{ include.url | default: page.url }}" title="Copy to Clipboard">
 			<span slot="text">
