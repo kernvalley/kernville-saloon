@@ -81,7 +81,7 @@
     "postcss-import": "^12.0.1",
     "postcss-import-url": "^5.1.0",
     "postcss-url": "^8.0.0",
-    "rollup": "^2.26.3",
+    "rollup": "^2.26.5",
     "rollup-plugin-terser": "^7.0.0",
     "rollup-plugin-url-resolve": "^0.1.1",
     "stylelint": "^13.6.1",
