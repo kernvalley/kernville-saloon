@@ -16,12 +16,40 @@ import { importGa } from 'https://cdn.kernvalley.us/js/std-js/google-analytics.j
 import { GA } from './consts.js';
 
 if (typeof GA === 'string' && GA.length !== 0) {
-	importGa(GA);
+	importGa(GA).then(async () => {
+		/* global ga */
+		ga('create', GA, 'auto');
+		ga('set', 'transport', 'beacon');
+		ga('send', 'pageview');
+
+
+		function outbound() {
+			ga('send', {
+				hitType: 'event',
+				eventCategory: 'outbound',
+				eventAction: 'click',
+				eventLabel: this.href,
+				transport: 'beacon',
+			});
+		}
+
+		await ready();
+
+		$('a[rel~="external"]').click(outbound, {
+			passive: true,
+			capture: true,
+		});
+	});
 }
 
-document.documentElement.classList.replace('no-js', 'js');
-document.documentElement.classList.toggle('no-dialog', document.createElement('dialog') instanceof HTMLUnknownElement);
-document.documentElement.classList.toggle('no-details', document.createElement('details') instanceof HTMLUnknownElement);
+const $doc = $(document.documentElement);
+
+$doc.replaceClass('no-js', 'js');
+$doc.toggleClass('no-dialog', document.createElement('dialog') instanceof HTMLUnknownElement);
+$doc.toggleClass('no-details', document.createElement('details') instanceof HTMLUnknownElement);
+
+$doc.css({'--viewport-height': `${window.innerHeight}px`});
+$doc.debounce('resize', () => $doc.css({'--viewport-height': `${window.innerHeight}px`}));
 
 Promise.allSettled([
 	ready(),
