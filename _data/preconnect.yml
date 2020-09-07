@@ -1,6 +1,8 @@
-- href: "https://api.github.com"
-  crossorigin: anonymous
+- href: https://i.imgur.com/
+  crossOrigin: anonymous
+  referrerPolicy: origin
+- href: https://api.github.com
+  crossOrigin: anonymous
+- href: https://maps.wikimedia.org/
+  crossOrigin: anonymous
   referrerPolicy: no-referrer
-- href: "https://maps.wikimedia.org/osm-intl"
-  crossorigin: anonymous
-  referrerPolicy: noReferrer

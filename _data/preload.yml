@@ -1,28 +1,68 @@
-- href: 'https://cdn.kernvalley.us/components/github/user.html'
-  as: fetch
-  type: text/html
-  crossorigin: anonymous
-  importane: low
-- href: 'https://cdn.kernvalley.us/components/github/user.css'
-  as: style
-  type: text/css
-  crossorigin: anonymous
-  referrerPolicy: no-referrer
-  importance: low
-- href: 'https://cdn.kernvalley.us/components/leaflet/map.html'
-  as: fetch
-  type: text/html
-  crossorigin: anonymous
-  importane: low
-- href: 'https://cdn.kernvalley.us/components/leaflet/map.css'
-  as: style
-  type: text/css
-  crossorigin: anonymous
-  referrerPolicy: no-referrer
-  importance: low
-- href: 'https://cdn.polyfill.io/v3/polyfill.min.js'
+- href: "https://cdn.polyfill.io/v3/polyfill.min.js"
   as: script
   type: text/javascript
-  crossorigin: anonymous
+  referrerPolicy: no-referrer
+  crossOrigin: anonymous
+  importance: high
+- href: "https://cdn.kernvalley.us/fonts/roboto.woff2"
+  as: font
+  type: font/woff2
+  crossOrigin: anonymous
   referrerPolicy: no-referrer
   importance: high
+- href: "/img/raster/level.jpg"
+  as: image
+  type: image/jpeg
+  referrerPolicy: no-referrer
+  media: "(min-width: 1281px)"
+  importance: high
+- href: "/img/raster/level-1280.jpg"
+  as: image
+  type: image/jpeg
+  referrerPolicy: no-referrer
+  media: "((min-width: 801px) and (max-width: 1280px))"
+  importance: high
+- href: "/img/raster/level-800.jpg"
+  as: image
+  type: image/jpeg
+  referrerPolicy: no-referrer
+  media: "((min-width: 641px) and (max-width: 800px))"
+  importance: high
+- href: "/img/raster/level-640.jpg"
+  as: image
+  type: image/jpeg
+  referrerPolicy: no-referrer
+  media: "((min-width: 501px) and (max-width: 640px))"
+  importance: high
+- href: "/img/raster/level-400.jpg"
+  as: image
+  type: image/jpeg
+  referrerPolicy: no-referrer
+  media: "(max-width: 400px)"
+  importance: high
+- href: "https://cdn.kernvalley.us/components/github/user.html"
+  as: fetch
+  type: text/html
+  crossOrigin: anonymous
+  referrerPolicy: no-referrer
+- href: "https://cdn.kernvalley.us/components/github/user.css"
+  as: style
+  type: text/css
+  crossOrigin: anonymous
+  referrerPolicy: no-referrer
+- href: "https://cdn.kernvalley.us/components/leaflet/map.html"
+  as: fetch
+  type: text/html
+  crossOrigin: anonymous
+  referrerPolicy: no-referrer
+- href: "https://cdn.kernvalley.us/components/leaflet/map.css"
+  as: style
+  type: text/css
+  crossOrigin: anonymous
+  referrerPolicy: no-referrer
+- href: ""
+  as: style
+  type: text/css
+  referrerPolicy: no-referrer
+  crossOrigin: anonymous
+  integrity: "sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
