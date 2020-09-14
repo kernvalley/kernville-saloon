@@ -14,48 +14,33 @@ import { $, ready } from 'https://cdn.kernvalley.us/js/std-js/functions.js';
 import { loadScript } from 'https://cdn.kernvalley.us/js/std-js/loader.js';
 import { importGa } from 'https://cdn.kernvalley.us/js/std-js/google-analytics.js';
 import { GA } from './consts.js';
+import { outbound, madeCall } from './analytics.js';
 
-if (typeof GA === 'string' && GA.length !== 0) {
-	importGa(GA).then(async () => {
-		/* global ga */
-		ga('create', GA, 'auto');
-		ga('set', 'transport', 'beacon');
-		ga('send', 'pageview');
+requestIdleCallback(() => {
+	if (typeof GA === 'string' && GA.length !== 0) {
+		importGa(GA).then(async () => {
+			/* global ga */
+			ga('create', GA, 'auto');
+			ga('set', 'transport', 'beacon');
+			ga('send', 'pageview');
 
-		function outbound() {
-			ga('send', {
-				hitType: 'event',
-				eventCategory: 'outbound',
-				eventAction: 'click',
-				eventLabel: this.href,
-				transport: 'beacon',
-			});
-		}
+			await ready();
 
-		function madeCall() {
-			ga('send', {
-				hitType: 'event',
-				eventCategory: 'call',
-				eventLabel: 'Called',
-				transport: 'beacon',
-			});
-		}
+			$('a[rel~="external"]').click(outbound, { passive: true, capture: true });
+			$('a[href^="tel:"]').click(madeCall, { passive: true, capture: true });
+		});
+	}
 
-		await ready();
+	const $doc = $(document.documentElement);
 
-		$('a[rel~="external"]').click(outbound, { passive: true, capture: true });
-		$('a[href^="tel:"]').click(madeCall, { passive: true, capture: true });
-	});
-}
+	$doc.replaceClass('no-js', 'js');
+	$doc.toggleClass('no-dialog', document.createElement('dialog') instanceof HTMLUnknownElement);
+	$doc.toggleClass('no-details', document.createElement('details') instanceof HTMLUnknownElement);
 
-const $doc = $(document.documentElement);
+	$doc.css({'--viewport-height': `${window.innerHeight}px`});
+	$doc.debounce('resize', () => $doc.css({'--viewport-height': `${window.innerHeight}px`}));
+});
 
-$doc.replaceClass('no-js', 'js');
-$doc.toggleClass('no-dialog', document.createElement('dialog') instanceof HTMLUnknownElement);
-$doc.toggleClass('no-details', document.createElement('details') instanceof HTMLUnknownElement);
-
-$doc.css({'--viewport-height': `${window.innerHeight}px`});
-$doc.debounce('resize', () => $doc.css({'--viewport-height': `${window.innerHeight}px`}));
 
 Promise.allSettled([
 	ready(),
