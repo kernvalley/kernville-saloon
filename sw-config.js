@@ -23,11 +23,11 @@ const config = {
 		'https://cdn.kernvalley.us/components/github/user.html',
 
 		/* JS, `customElements`, etc. */
-		'https://polyfill.io/v3/polyfill.min.js',
+		'https://cdn.polyfill.io/v3/polyfill.min.js',
 		'https://cdn.kernvalley.us/components/pwa/install.js',
 
 		/* CSS */
-		'https://unpkg.com/leaflet@1.6.0/dist/leaflet.css',
+		'https://unpkg.com/leaflet@1.7.1/dist/leaflet.css',
 
 		/* Images & Icons */
 		'/img/apple-touch-icon.png',
